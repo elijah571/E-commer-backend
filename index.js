@@ -27,10 +27,11 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // Vite's default port
+    origin: "https://e-commerce-frontend-dg0q.onrender.com",
     credentials: true, // Allow cookies to be sent
   })
 );
+
 // Routes
 app.use("/api/users", userRoutes);
 app.use("/api/category", categoryRoutes);
